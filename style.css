@@ -32,14 +32,14 @@
   display: inline-block;
   flex-grow: 1;
 }
-.task-row-wrapper {
+.section__content__wrapper {
   display: flex;
 }
 .list {
   margin: 0;
   padding: 0px;
 }
-.list-item,
+.list__item,
 .title {
   list-style: none;
 }
@@ -96,7 +96,7 @@
 }
 
 /* Task list */
-.list-item {
+.list__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -105,28 +105,28 @@
   justify-content: space-between;
   align-items: center;
 }
-.list-item > * {
+.list__item > * {
   vertical-align: middle;
 }
 
-.list-item > .input[type="checkbox"] {
+.list__item > .input[type="checkbox"] {
   margin: 0 10px;
 }
-.list-item > .label {
+.list__item > .label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-.list-item >    .input[type="text"] {
+.list__item >    .input[type="text"] {
   width: 226px;
 }
-.btn.delete .img {
+.btn.item__delete_btn .img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.btn.delete .img:hover {
+.btn.item__delete_btn .img:hover {
   transform: rotateZ(0);
 }
 
@@ -137,15 +137,15 @@
 }
 
 /* Edit Task */
-.list .list-item .input[type=text] {
+.list .list__item .input[type=text] {
   display: none;
 }
 
-.list .list-item.edit-mode .input[type=text] {
+.list .list__item.edit_mode .input[type=text] {
   display: inline-block;
   width: 224px;
 }
 
-.list .list-item.edit-mode .label {
+.list .list__item.edit_mode .label {
   display: none;
 }
